@@ -30,7 +30,7 @@ const SimpleFooter = () => {
               <input
                 type="text"
                 placeholder="Enter your email address"
-                className="outline-none text-sm w-full"
+                className="outline-none text-sm w-full text-black"
               />
             </div>
             <button className="bg-white text-black font-bold py-2 rounded-full hover:bg-gray-200 transition">
@@ -56,25 +56,25 @@ const SimpleFooter = () => {
               <div className="flex gap-3 mt-6">
                 <a
                   href="#"
-                  className="w-8 h-8 bg-white rounded-full border flex items-center justify-center hover:bg-[#f68c1e] hover:text-white"
+                  className="w-8 h-8 text-black bg-white rounded-full border flex items-center justify-center hover:bg-[#f68c1e] hover:text-white"
                 >
                   <Twitter size={14} />
                 </a>
                 <a
                   href="#"
-                  className="w-8 h-8 bg-black hover:bg-[#f68c1e] text-white rounded-full flex items-center justify-center"
+                  className="w-8 h-8 bg-black text-black hover:bg-[#f68c1e] text-white rounded-full flex items-center justify-center"
                 >
                   <Facebook size={14} />
                 </a>
                 <a
                   href="#"
-                  className="w-8 h-8 bg-white rounded-full border flex items-center justify-center hover:bg-[#f68c1e] hover:text-white"
+                  className="w-8 h-8 bg-white text-black rounded-full border flex items-center justify-center hover:bg-[#f68c1e] hover:text-white"
                 >
                   <Instagram size={14} />
                 </a>
                 <a
                   href="#"
-                  className="w-8 h-8 bg-white rounded-full border flex items-center justify-center hover:bg-[#f68c1e] hover:text-white"
+                  className="w-8 h-8 bg-white text-black rounded-full border flex items-center justify-center hover:bg-[#f68c1e] hover:text-white"
                 >
                   <Github size={14} />
                 </a>
@@ -82,12 +82,12 @@ const SimpleFooter = () => {
             </div>
 
             <div>
-              <h3 className="font-bold mb-4 tracking-widest text-sm">
+              <h3 className="font-bold mb-4 tracking-widest text-sm text-black">
                 COMPANY
               </h3>
               <ul className="text-gray-500 text-sm space-y-3">
                 <li>
-                  <a href="#" className="hover:text-black">
+                  <a href="#" className="hover:text-black ">
                     About
                   </a>
                 </li>
@@ -110,7 +110,9 @@ const SimpleFooter = () => {
             </div>
 
             <div>
-              <h3 className="font-bold mb-4 tracking-widest text-sm">HELP</h3>
+              <h3 className="font-bold mb-4 tracking-widest text-sm text-black">
+                HELP
+              </h3>
               <ul className="text-gray-500 text-sm space-y-3">
                 <li>
                   <a href="#" className="hover:text-black">
@@ -136,7 +138,9 @@ const SimpleFooter = () => {
             </div>
 
             <div>
-              <h3 className="font-bold mb-4 tracking-widest text-sm">FAQ</h3>
+              <h3 className="font-bold mb-4 tracking-widest text-sm text-black">
+                FAQ
+              </h3>
               <ul className="text-gray-500 text-sm space-y-3">
                 <li>
                   <a href="#" className="hover:text-black">
@@ -162,7 +166,7 @@ const SimpleFooter = () => {
             </div>
 
             <div>
-              <h3 className="font-bold mb-4 tracking-widest text-sm">
+              <h3 className="font-bold mb-4 tracking-widest text-sm text-black">
                 RESOURCES
               </h3>
               <ul className="text-gray-500 text-sm space-y-3">

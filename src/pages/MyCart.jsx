@@ -36,7 +36,10 @@ const MyCart = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-10 mt-20">
+    <section
+      className="max-full
+     mx-auto px-4 py-10 mt-20 text-black bg-white"
+    >
       <p className="text-sm text-gray-400 mb-4">Home &gt; Cart</p>
       <h1 className="text-3xl font-black mb-8">YOUR CART</h1>
 
@@ -122,17 +125,6 @@ const MyCart = () => {
               <span>Total</span>
               <span>${total + DeliveryCost}</span>
             </div>
-          </div>
-
-          <div className="flex gap-2 mt-5">
-            <input
-              type="text"
-              placeholder="Add promo code"
-              className="flex-1 border rounded-full px-4 py-2 text-sm outline-none"
-            />
-            <button className="bg-black text-white px-4 rounded-full text-sm">
-              Apply
-            </button>
           </div>
 
           <button className="w-full mt-6 bg-black hover:bg-amber-500 text-white py-3 rounded-full flex items-center justify-center gap-2">

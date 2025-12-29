@@ -33,17 +33,17 @@ const Testimonials = () => {
   const allReviews = [...reviews, ...reviews];
 
   return (
-    <section className="relative overflow-hidden py-16 px-4">
+    <section className="relative overflow-hidden py-16 px-4 ">
       <h2 className="mb-12 text-center text-3xl md:text-5xl font-black">
         Our Happy Customers
       </h2>
 
       {/* Blur */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-white to-transparent z-10" />
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-white to-transparent z-10" />
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-8 sm:w-32 bg-gradient-to-r from-white to-transparent z-10" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-8 sm:w-32 bg-gradient-to-l from-white to-transparent z-10" />
 
       <motion.div
-        className="flex gap-6"
+        className="flex gap-6 text-black"
         animate={{ x: ["0%", "-50%"] }}
         transition={{
           duration: 25,

@@ -24,7 +24,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation Links */}
 
-          <div className="hidden md:flex items-center space-x-8 text-lg font-medium text-gray-700">
+          <div className="hidden md:flex items-center space-x-8 text-sm lg:text-lg font-medium text-gray-700">
             <Link
               className="flex items-center gap-1 hover:text-[#f68c1e] transition-colors"
               to={"/"}
@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
 
           {/* Search Bar */}
-          <div className="hidden sm:flex flex-1 max-w-md items-center bg-gray-100 rounded-full px-4 py-2 gap-3">
+          <div className="hidden lg:flex flex-1 max-w-md items-center bg-gray-100 rounded-full px-4 py-2 gap-3">
             <Search className="text-gray-400" size={20} />
             <input
               type="text"
@@ -80,28 +80,28 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-4">
-          <a
-            href="#"
+        <div className="md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-6 space-y-4 text-black">
+          <Link
+            to={"/"}
             className="block text-lg font-medium py-2 border-b border-gray-50"
           >
-            Shop
-          </a>
-          <a
-            href="#"
+            Home
+          </Link>
+          <Link
+            to={"mycart"}
             className="block text-lg font-medium py-2 border-b border-gray-50"
           >
-            On Sale
-          </a>
-          <a
-            href="#"
+            My Cart
+          </Link>
+          <Link
             className="block text-lg font-medium py-2 border-b border-gray-50"
+            to={"/addproduct"}
           >
-            New Arrivals
-          </a>
-          <a href="#" className="block text-lg font-medium py-2">
-            Brands
-          </a>
+            Add Product
+          </Link>
+          <Link to={"login"} className="block text-lg font-medium py-2">
+            Login
+          </Link>
         </div>
       )}
     </nav>

@@ -33,10 +33,10 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4  ">
       <form
         onSubmit={handleSubmit}
-        className="bg-white w-full max-w-3xl rounded-xl shadow-lg p-6 space-y-6"
+        className="bg-white w-full max-w-3xl rounded-xl shadow-lg p-6 space-y-6 "
       >
         <h2 className="text-2xl font-semibold text-gray-800 text-center">
           Add New Product
@@ -99,7 +99,9 @@ const AddProduct = () => {
         {/* Images */}
         <div className="space-y-4 grid gap-5 grid-cols-1 md:grid-cols-2">
           <div>
-            <label className="block mb-1 font-medium">Main Image</label>
+            <label className="block mb-1 font-medium text-black">
+              Main Image
+            </label>
             <input
               type="file"
               name="mainImage"
@@ -109,7 +111,12 @@ const AddProduct = () => {
           </div>
 
           <div>
-            <label className="block mb-1 font-medium">Sub Images (Max 3)</label>
+            <label
+              className="block mb-1 font-medium text-black
+            "
+            >
+              Sub Images (Max 3)
+            </label>
             <input
               type="file"
               name="subImages"
