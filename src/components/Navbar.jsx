@@ -31,9 +31,13 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <a href="#" className="hover:text-[#f68c1e] transition-colors">
-              On Sale
-            </a>
+            <Link
+              href="#"
+              className="hover:text-[#f68c1e] transition-colors"
+              to={"/addproduct"}
+            >
+              Add Product
+            </Link>
             <a href="#" className="hover:text-[#f68c1e] transition-colors">
               New Arrivals
             </a>
