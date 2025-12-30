@@ -159,7 +159,7 @@ const ProductDetails = () => {
             </div>
 
             {/* Quantity & Cart */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 text-black">
               <div className="flex items-center bg-[#F0F0F0] rounded-full px-6 py-4 gap-6">
                 <button onClick={() => setQuantity(Math.max(1, quantity - 1))}>
                   <Minus size={20} />

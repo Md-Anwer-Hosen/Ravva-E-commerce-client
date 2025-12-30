@@ -7,7 +7,7 @@ const TopSelling = ({ products }) => {
 
   const visibleProduct = showAll ? products : products.slice(0, 4);
 
-  console.log(products);
+  // console.log(products);
 
   return (
     <section className=" px-4 w-full mx-auto py-10">

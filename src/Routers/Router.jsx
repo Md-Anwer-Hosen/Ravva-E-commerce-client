@@ -6,6 +6,7 @@ import MyCart from "../pages/MyCart";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import AddProduct from "../pages/AddProduct";
+import NotFoundPage from "../components/NotFoundPage";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,13 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
-        loader: () => fetch("http://localhost:3000/products"),
+        loader: () =>
+          fetch(
+            "https://ravva-e-commerce-server-production.up.railway.app/products"
+          ),
+        hydrateFallbackElement: (
+          <span className="loading loading-spinner loading-lg"></span>
+        ),
       },
       {
         path: "/home",
@@ -25,7 +32,12 @@ const router = createBrowserRouter([
         path: "product/:id",
         element: <ProductDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/products/${params.id}`),
+          fetch(
+            `https://ravva-e-commerce-server-production.up.railway.app/products/${params.id}`
+          ),
+        hydrateFallbackElement: (
+          <span className="loading loading-spinner loading-lg"></span>
+        ),
       },
       {
         path: "mycart",
@@ -43,7 +55,15 @@ const router = createBrowserRouter([
         path: "addproduct",
         element: <AddProduct />,
       },
+      {
+        path: "*",
+        element: <NotFoundPage />,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);
 

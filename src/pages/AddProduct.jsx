@@ -14,10 +14,13 @@ const AddProduct = () => {
     // Add currentPrice to FormData
     formData.set("currentPrice", currentPrice.toFixed(2)); // optional: 2 decimal points
 
-    fetch("http://localhost:3000/products", {
-      method: "POST",
-      body: formData,
-    })
+    fetch(
+      "https://ravva-e-commerce-server-production.up.railway.app/products",
+      {
+        method: "POST",
+        body: formData,
+      }
+    )
       .then((res) => res.json())
       .then((result) => {
         if (result.insertedId) {
